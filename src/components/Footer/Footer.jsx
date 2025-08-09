@@ -39,7 +39,7 @@ function Footer() {
                             </tr>
                             <tr>
                                 <th className={styles.headerCell}>Contact</th>
-                                <td className={styles.dataCell}>0106-03-011416</td>
+                                <td className={styles.dataCell}>03-6315-7523</td>
                             </tr>
                             <tr>
                                 <th className={styles.headerCell}>E-mail commerce</th>
