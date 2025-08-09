@@ -1,8 +1,10 @@
 .content {
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
+  margin:0 auto;
 
 	&__title{
 		display: flex;
@@ -11,6 +13,9 @@
 		justify-content: center;
 		font-size: 35px;
 		margin-top: 50px;
+		font-family: 'Playfair Display', serif;
+  				font-weight: 600;       /* Regular weight */
+  				font-style: italic;
 	}
 
   .aboutUs {
@@ -37,6 +42,9 @@
 				justify-content: center;
 				font-size: 25px;
 				margin-top:50px;
+				font-family: 'Playfair Display', serif;
+  				font-weight: 500;       /* Regular weight */
+  				font-style: italic;
 			}
 
 			&__text{
@@ -47,6 +55,7 @@
 				font-size: 17px;
 				margin-top: 25px;
 				padding: 0px 250px;
+				font-family: 'Poppins', sans-serif;
 			}
   	}
 }
