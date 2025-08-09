@@ -1,0 +1,96 @@
+.companyInfo {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  margin-top: 100px;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.tableContainer {
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.infoTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  
+  tr {
+    border-bottom: 1px solid #eee;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  th, td {
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+    vertical-align: top;
+  }
+}
+
+.headerCell {
+  width: 30%;
+  min-width: 180px;
+  font-weight: 600;
+  color: #444;
+  background-color: #f9f9f9;
+}
+
+.dataCell {
+  color: #555;
+  line-height: 1.6;
+}
+
+.businessList {
+  margin: 0;
+  padding-left: 1.2rem;
+  
+  li {
+    margin-bottom: 0.5rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .infoTable {
+    display: block;
+    
+    tbody, tr, th, td {
+      display: block;
+    }
+    
+    th {
+      width: 100%;
+      background-color: transparent;
+      padding-bottom: 0.5rem;
+    }
+    
+    td {
+      padding-top: 0.5rem;
+      padding-bottom: 1.5rem;
+    }
+    
+    tr {
+      padding: 1rem 0;
+    }
+  }
+  
+  .headerCell {
+    min-width: 100%;
+  }
+}

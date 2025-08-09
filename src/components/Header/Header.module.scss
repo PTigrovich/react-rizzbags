@@ -1,0 +1,70 @@
+.header {
+	width: 100vw;
+	height: 100px;
+	background-color: rgb(255, 255, 255);
+	padding: 0 100px;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	position: sticky;
+   top: 0;
+   z-index: 100;
+	opacity: 0.8;
+
+	&__logo {
+		height: 48px;
+		width: 125px;
+		color: rgb(0, 0, 0);;
+
+		display: flex;
+  		align-items: center; /* Смещает текст к нижнему краю */
+  		justify-content: center; /* Горизонтальное центрирование */
+  		
+		font-family: 'Outfit', sans-serif;
+  		font-weight: 600;
+		
+  		font-size: 35px;
+   }
+
+	&__nav {
+		height: 40px;
+		width: 500px;
+		background-color: rgb(255, 255, 255);
+		display:flex;
+	   align-items: center;
+	   justify-content: space-between;
+
+		font-family: 'Poppins', sans-serif;
+  		
+	}
+
+	.nav__link{
+		color: rgb(148, 143, 149);
+		text-decoration: none;
+		font-size: 16px;
+		
+		transition: color 0.3s ease;
+
+		&:hover {
+    		color: #000;
+  		}
+
+		&.active { 
+    		color: black;
+    		font-weight: 600; 
+  		}
+	}
+
+	.navLink__contact{
+			margin-right:90px;
+			color: rgb(125, 120, 125);
+  			font-weight: 600;
+
+
+			&:hover {
+    				color: #000;
+  			}
+		}
+
+	
+}

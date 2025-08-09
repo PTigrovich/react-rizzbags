@@ -1,0 +1,125 @@
+.footer {
+  background-color: #f8f8f8;
+  margin-top: 200px;
+  color: #333;
+  padding: 3rem 0 1.5rem;
+  border-top: 1px solid #eaeaea;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.brandInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandName {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.navLink {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  margin-top:21px;
+  
+  &:hover {
+    color: #000;
+  }
+}
+
+.companyInfo {
+  overflow-x: auto;
+}
+
+.infoTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  
+  tr {
+    border-bottom: 1px solid #eee;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  th, td {
+    padding: 0.8rem 0;
+    text-align: left;
+    vertical-align: top;
+  }
+}
+
+.headerCell {
+  font-weight: 500;
+  color: #444;
+  width: 40%;
+  padding-right: 1rem;
+}
+
+.dataCell {
+  color: #666;
+  line-height: 1.6;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .infoTable {
+    display: block;
+    
+    tbody, tr, th, td {
+      display: block;
+    }
+    
+    th {
+      padding-top: 1.2rem;
+      padding-bottom: 0.4rem;
+    }
+    
+    td {
+      padding-top: 0;
+      padding-bottom: 1.2rem;
+    }
+  }
+}
