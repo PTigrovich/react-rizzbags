@@ -43,7 +43,7 @@ function Footer() {
                             </tr>
                             <tr>
                                 <th className={styles.headerCell}>E-mail commerce</th>
-                                <td className={styles.dataCell}>hyemoe@sobaka.jp</td>
+                                <td className={styles.dataCell}>rizzvtg@yahoo.com</td>
                             </tr>
                         </tbody>
                     </table>
