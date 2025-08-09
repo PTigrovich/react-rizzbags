@@ -2,6 +2,7 @@
   min-height: 100vh;
   width: 100%;
   max-width: 1500px;
+  min-width: 1500px;
   display: flex;
   flex-direction: column;
   margin:0 auto;
@@ -12,6 +13,7 @@
 .greetings {
 	 width: 100%;
    max-width: 1500px;
+	min-width: 1500px;
 	height: 770px;
 	display: flex;
 	margin-top: 100px;
