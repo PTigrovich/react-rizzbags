@@ -19,6 +19,29 @@
   border-radius: 8px;
 }
 
+.directorsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.directorItem {
+  padding: 0.3rem 0;
+}
+
+.directorDivider {
+  height: 1px;
+  background-color: #eee; /* Серая линия как у разделов таблицы */
+  margin: 0.3rem 0;
+}
+
+/* Для мобильной версии */
+@media (max-width: 768px) {
+  .directorDivider {
+    margin: 0.2rem 0;
+  }
+}
+
 .infoTable {
   width: 100%;
   border-collapse: collapse;

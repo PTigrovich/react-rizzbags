@@ -27,7 +27,7 @@ function About() {
                     Each store is staffed with top appraisers appointed by our headquarters in Japan to strictly assess every Hermès item recycled or consigned.
                     To date, both overseas stores have earned the trust of customers and become one of the shops with the largest Hermès inventories at current
                     market prices in the region. Through the constantly updated multilingual official online store and social media platforms, we provide Hermès
-                    enthusiasts worldwide with a free space to "discover your dream bag and let go of your beloved one." Here, Hermès experts with nearly 30
+                    enthusiasts worldwide with a free space to "discover your dream bag and let go of your beloved one." Here, Hermès experts with nearly 10
                     years of experience in Japan carefully select every Hermès item for you. With their lifetime of expertise and market-leading insight, they
                     offer you precise guidance on recycling and consigning your Hermès items. Our professional team thoroughly understands market trends and
                     fluctuations worldwide, recycling thousands of Hermès bags and accessories annually. In recent years, we have also introduced a number of

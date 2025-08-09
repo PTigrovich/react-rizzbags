@@ -39,6 +39,16 @@ function Table() {
                             <td className={styles.dataCell}>lei Kei</td>
                         </tr>
                         <tr>
+                            <th className={styles.headerCell}>Representative Director</th>
+                            <td className={styles.dataCell}>
+                                <div className={styles.directorsContainer}>
+                                    <div className={styles.directorItem}>Dorofeyev Vadim</div>
+                                    <div className={styles.directorDivider}></div>
+                                    <div className={styles.directorItem}>Yoon Young Gul</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
                             <th className={styles.headerCell}>Capital</th>
                             <td className={styles.dataCell}>5.15 million yen</td>
                         </tr>
