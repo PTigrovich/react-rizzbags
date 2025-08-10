@@ -19,7 +19,7 @@
     "sass": "^1.89.2",
     "scss": "^0.2.4",
     "smoothscroll-polyfill": "^0.4.4",
-    "typescript": "^5.9.2",
+    "typescript": "4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
