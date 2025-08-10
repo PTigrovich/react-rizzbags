@@ -4,7 +4,7 @@ import './styles/index.scss';
 import Main from './pages/Main/Main';
 import About from './pages/About/About';
 import { I18nextProvider } from 'react-i18next';
-import i18n from './i18n';
+import i18n from './data/i18n';
 
 
 

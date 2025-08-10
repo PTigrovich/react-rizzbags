@@ -20,31 +20,31 @@ export const products = [
     {
         id: 4,
         name: 'Kelly',
-        description: 'Hermes Kelly 28 Rouge H in Box lether',
+        description: 'Hermes Kelly 28 Rouge H in Box leather',
         imageUrl: '/images/item1-4.png',
     },
     {
         id: 5,
         name: 'Kelly',
-        description: 'Hermes Kelly 25 Noir GHW in Swift lether',
+        description: 'Hermes Kelly 25 Noir GHW in Swift leather',
         imageUrl: '/images/item1-5.png',
     },
     {
         id: 6,
         name: 'Birkin',
-        description: 'Hermes Birkin 25 Rouge Sellier PHW in Togo lether',
+        description: 'Hermes Birkin 25 Rouge Sellier PHW in Togo leather',
         imageUrl: '/images/item1-6.png',
     },
     {
         id: 7,
         name: 'Birkin',
-        description: 'Hermes Birkin 25 Go Team in Ebene/Swift lether',
+        description: 'Hermes Birkin 25 Go Team in Ebene/Swift leather',
         imageUrl: '/images/item1-7.png',
     },
     {
         id: 8,
         name: 'Birkin',
-        description: 'Hermes Birkin 25 Jaune Poussin PHW in Swift lether',
+        description: 'Hermes Birkin 25 Jaune Poussin PHW in Swift leather',
         imageUrl: '/images/item1-8.png',
     },
 ];
