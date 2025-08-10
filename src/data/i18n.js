@@ -67,7 +67,7 @@ const resources = {
 i18n.use(initReactI18next) // Подключаем React-интеграцию
     .init({
         resources, // Ресурсы с переводами
-        lng: 'en', // Язык по умолчанию
+        lng: 'ja', // Язык по умолчанию
         fallbackLng: 'en', // Если перевод не найден, используем английский
         interpolation: {
             escapeValue: false, // Не экранировать HTML (если нужны теги в переводах)
