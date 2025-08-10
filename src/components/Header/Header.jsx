@@ -37,44 +37,52 @@ function Header() {
     };
 
     return (
-        <header className={styles.header}>
-            <h1 className={styles.header__logo}>RizzBags</h1>
-            <nav className={styles.header__nav}>
-                {/* Home - всегда ведет на главную страницу */}
-                <NavLink to="/" className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`} onClick={e => handleLinkClick(e, '/')}>
-                    {t('Home')}
-                </NavLink>
+        
+            <div className={styles.headerContainer}>
+                <header className={styles.header}>
+                    <h1 className={styles.header__logo}>RizzBags</h1>
+                    <nav className={styles.header__nav}>
+                        {/* Home - всегда ведет на главную страницу */}
+                        <NavLink
+                            to="/"
+                            className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`}
+                            onClick={e => handleLinkClick(e, '/')}
+                        >
+                            {t('Home')}
+                        </NavLink>
 
-                {/* About - обычный переход на страницу */}
-                <NavLink to="/about" className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`}>
-                    {t('About')}
-                </NavLink>
+                        {/* About - обычный переход на страницу */}
+                        <NavLink to="/about" className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`}>
+                            {t('About')}
+                        </NavLink>
 
-                {/* Blog - якорная ссылка только на главной */}
-                {location.pathname === '/' ? (
-                    <a href="#blog" className={styles.nav__link} onClick={e => handleLinkClick(e, '#blog')}>
-                        {t('Blog')}
-                    </a>
-                ) : (
-                    <NavLink to="/#blog" className={styles.nav__link}>
-                        {t('Blog')}
-                    </NavLink>
-                )}
+                        {/* Blog - якорная ссылка только на главной */}
+                        {location.pathname === '/' ? (
+                            <a href="#blog" className={styles.nav__link} onClick={e => handleLinkClick(e, '#blog')}>
+                                {t('Blog')}
+                            </a>
+                        ) : (
+                            <NavLink to="/#blog" className={styles.nav__link}>
+                                {t('Blog')}
+                            </NavLink>
+                        )}
 
-                {/* Contact - обычный переход */}
+                        {/* Contact - обычный переход */}
 
-                {location.pathname === '/' ? (
-                    <a href="#contact" className={`${styles.nav__link} ${styles.navLink__contact}`} onClick={e => handleLinkClick(e, '#contact')}>
-                        {t('Contact')}
-                    </a>
-                ) : (
-                    <NavLink to="/#contact" className={`${styles.nav__link} ${styles.navLink__contact}`}>
-                        {t('Contact')}
-                    </NavLink>
-                )}
-            </nav>
-				<Switcher/>
-        </header>
+                        {location.pathname === '/' ? (
+                            <a href="#contact" className={`${styles.nav__link} ${styles.navLink__contact}`} onClick={e => handleLinkClick(e, '#contact')}>
+                                {t('Contact')}
+                            </a>
+                        ) : (
+                            <NavLink to="/#contact" className={`${styles.nav__link} ${styles.navLink__contact}`}>
+                                {t('Contact')}
+                            </NavLink>
+                        )}
+                    </nav>
+                    <Switcher />
+                </header>
+            </div>
+       
     );
 }
 
