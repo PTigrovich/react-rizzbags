@@ -1,0 +1,33 @@
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+
+  .divider {
+    color: rgb(149, 146, 149);
+  }
+
+  .language-btn {
+    background: none;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    color: rgb(149, 146, 149);
+    transition: all 0.2s ease;
+    border-radius: 3px;
+    font-weight: 500;
+
+    &:hover {
+      color: rgb(131, 73, 6);
+      background-color: rgba(131, 73, 6, 0.1);
+    }
+
+    &.active {
+      color: rgb(131, 73, 6);
+      font-weight: 600;
+    }
+  }
+}
+

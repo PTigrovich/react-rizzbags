@@ -1,10 +1,12 @@
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import styles from './Header.module.scss';
+import { useTranslation } from 'react-i18next';
+import Switcher from '../Switcher/Switcher'
 
 function Header() {
     const location = useLocation();
     const navigate = useNavigate();
-
+    const { t } = useTranslation(); // t = функция перевода
     const handleLinkClick = (e, path) => {
         // Если это переход на Home с любой страницы
         if (path === '/') {
@@ -40,22 +42,22 @@ function Header() {
             <nav className={styles.header__nav}>
                 {/* Home - всегда ведет на главную страницу */}
                 <NavLink to="/" className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`} onClick={e => handleLinkClick(e, '/')}>
-                    Home
+                    {t('Home')}
                 </NavLink>
 
                 {/* About - обычный переход на страницу */}
                 <NavLink to="/about" className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`}>
-                    About
+                    {t('About')}
                 </NavLink>
 
                 {/* Blog - якорная ссылка только на главной */}
                 {location.pathname === '/' ? (
                     <a href="#blog" className={styles.nav__link} onClick={e => handleLinkClick(e, '#blog')}>
-                        Blog
+                        {t('Blog')}
                     </a>
                 ) : (
                     <NavLink to="/#blog" className={styles.nav__link}>
-                        Blog
+                        {t('Blog')}
                     </NavLink>
                 )}
 
@@ -63,14 +65,15 @@ function Header() {
 
                 {location.pathname === '/' ? (
                     <a href="#contact" className={`${styles.nav__link} ${styles.navLink__contact}`} onClick={e => handleLinkClick(e, '#contact')}>
-                        Contact
+                        {t('Contact')}
                     </a>
                 ) : (
                     <NavLink to="/#contact" className={`${styles.nav__link} ${styles.navLink__contact}`}>
-                        Contact
+                        {t('Contact')}
                     </NavLink>
                 )}
             </nav>
+				<Switcher/>
         </header>
     );
 }

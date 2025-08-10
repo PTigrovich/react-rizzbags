@@ -4,8 +4,7 @@ import { NavLink } from 'react-router-dom';
 import GalleryCard from '../../components/GalleryCard/GalleryCard';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
-
-
+import { useTranslation } from 'react-i18next';
 
 function Main() {
     const [activeSection, setActiveSection] = useState('home');
@@ -28,6 +27,8 @@ function Main() {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const { t } = useTranslation(); // t = функция перевода
 
     const handleScrollTo = (e, id) => {
         e.preventDefault();
@@ -58,24 +59,25 @@ function Main() {
             <Header />
             <div className={styles.greetings}>
                 <div className={styles.greetings__text}>
-                    <h2 className={styles.text__title}>Discover the Finest Hermes</h2>
+                    <h2 className={styles.text__title}>{t('Discover the Finest Hermes')}</h2>
                     <p className={styles.text__description}>
-                        Welcome to our exclusive Hermes handbag boutique, where exquisite craftsmanship and timeless elegance converge. Explore our curated
-                        collection of premium leather goods.
+                        {t(
+                            'Welcome to our exclusive Hermes handbag boutique, where exquisite craftsmanship and timeless elegance converge. Explore our curated collection of premium leather goods.'
+                        )}
                     </p>
                     <nav className={styles.text__nav}>
                         <NavLink to="/about" className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`}>
-                            About
+                            {t('About')}
                         </NavLink>
                         <NavLink
                             to="/#blog"
                             className={({ isActive }) => `${styles.nav__link} ${isActive || activeSection === 'blog' ? styles.active : ''}`}
                             onClick={e => handleScrollTo(e, 'blog')}
                         >
-                            Blog
+                            {t('Blog')}
                         </NavLink>
                         <NavLink to="/#contact" className={({ isActive }) => `${styles.nav__link} ${isActive ? styles.active : ''}`}>
-                            Contact
+                            {t('Contact')}
                         </NavLink>
                     </nav>
                 </div>

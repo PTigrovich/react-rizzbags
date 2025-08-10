@@ -1,15 +1,19 @@
 import styles from './GalleryCard.module.scss';
 import ItemCard from '../../components/ItemCard/ItemCard';
 import { products } from '../../data/data';
+import { useTranslation } from 'react-i18next';
 
 function GalleryCard() {
+    const { t } = useTranslation(); // t = функция перевода
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.textBlock}>
-                <h3 className={styles.textBlock__title}>About Hermes</h3>
+                <h3 className={styles.textBlock__title}>{t('About Hermes')} </h3>
                 <p className={styles.textBlock__description}>
-                    Hermes, the renowned French luxury brand, has been synonymous with unparalleled craftsmanship and timeless sophistication for over a
-                    century.
+                    {t(
+                        'Hermes , the renowned French luxury brand, has been synonymous with unparalleled craftsmanship and timeless sophistication for over a century.'
+                    )}
                 </p>
             </div>
             <div className={styles.itemBlock}>
