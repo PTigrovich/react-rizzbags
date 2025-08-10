@@ -38,7 +38,7 @@ function Table() {
                         </tr>
                         <tr>
                             <th className={styles.headerCell}>{t('Managing Partner')}</th>
-                            <td className={styles.dataCell}>{t('lei Kei')}</td>
+                            <td className={styles.dataCell}>{t('lei Kei')}</td> 
                         </tr>
                         <tr>
                             <th className={styles.headerCell}>{t('Representative Director')}</th>
